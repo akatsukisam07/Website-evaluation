@@ -1,97 +1,47 @@
-Website Evaluation Using Opinion Mining
+# Website Evaluation Using Opinion Mining
 
-A sentiment-driven system that evaluates websites using NLP and a Recurrent Neural Network (LSTM-based model).
+## Project Overview
+This project implements a **sentiment-driven website evaluation system** using **Natural Language Processing (NLP)** and a **deep learning–based Recurrent Neural Network (LSTM)**. The system analyzes user opinions in the form of reviews or comments and evaluates website quality based on sentiment classification.
 
-Overview
+The objective is to automatically extract insights from textual feedback and classify sentiments into **Positive, Neutral, and Negative** categories.
 
-This project performs website quality evaluation using opinion mining.
-It extracts user reviews/comments, cleans the text, vectorizes the text, and classifies sentiment (Positive, Neutral, Negative) using a deep learning–based RNN model (LSTM).
+---
 
-Features
+## Repository Overview
+The project follows an end-to-end opinion mining pipeline, including data ingestion, text preprocessing, deep learning–based modeling, and result visualization.
 
-Web scraping / dataset ingestion
+---
 
-Text cleaning & preprocessing
+## Problem Statement
+User-generated content such as reviews and comments provides valuable insights into website quality. However, manual analysis is time-consuming and error-prone.  
+This project applies **deep learning–based sentiment analysis** to automate website evaluation by learning contextual and sequential patterns in text data.
 
-Tokenization + padding
+---
 
-Deep learning model (Embedding + LSTM)
+## Features
+- Web scraping or dataset-based ingestion of user reviews
+- Text cleaning and preprocessing
+- Tokenization and sequence padding
+- LSTM-based deep learning model for sentiment classification
+- Visualization of sentiment distribution and model performance
 
-Visualizations: sentiment distribution, word cloud, accuracy/loss curves
+---
 
+## Workflow
 
-Tech Stack
+### 1. Data Loading and Cleaning
+- Removed irrelevant or unused columns
+- Dropped null or inconsistent entries
+- Generated sentiment labels (Positive, Neutral, Negative) from numerical ratings
 
+### 2. Text Preprocessing
+- Converted text to lowercase
+- Removed punctuation and special characters
+- Eliminated stopwords
+- Tokenized text
+- Applied padding to ensure uniform input length
 
-Language: Python
+### 3. Deep Learning Model
+- Used an LSTM-based Recurrent Neural Network to capture sequential dependencies in text
 
-Libraries: TensorFlow/Keras, Pandas, NumPy, NLTK, Matplotlib, Seaborn
-
-Model: LSTM-based Recurrent Neural Network
-
-Platform: Google Colab
-
-
-Workflow
-
-1. Data Loading & Cleaning
-
-Removed unnecessary columns
-
-Dropped null values
-
-Created sentiment labels from ratings (Positive, Neutral, Negative)
-
-
-2. Text Preprocessing
-
-Lowercasing
-
-Removing punctuation
-
-Stopword removal
-
-Tokenization
-
-Padding sequences
-
-
-3. Deep Learning Model (LSTM)
-
-Architecture used:
-
-Embedding → LSTM → Dense → Output Layer
-
-
-
-Results
-
-LSTM model achieved 92.87% accuracy 
-
-Captures long-term dependencies in review text
-
-Performs significantly better than classical ML models for raw text
-
-<img width="310" height="288" alt="image" src="https://github.com/user-attachments/assets/55273cfb-6483-43ea-965b-59df48d8e312" />
-
-
-
-Conclusion
-
-This project demonstrates how deep learning (LSTM) can be applied for opinion mining and website evaluation.
-The pipeline is flexible and can be expanded to support more complex architectures.
-
-
-Future Improvements
-
-Use GRU / BiLSTM
-
-Add attention mechanism
-
-Try transformer models (BERT)
-
-Deploy as an API / dashboard
-
-Author
-
-Sambit Sahoo
+**Model Architecture:**
