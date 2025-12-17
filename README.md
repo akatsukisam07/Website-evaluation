@@ -45,3 +45,42 @@ This project applies **deep learning–based sentiment analysis** to automate we
 - Used an LSTM-based Recurrent Neural Network to capture sequential dependencies in text
 
 **Model Architecture:**
+
+
+---
+
+## Results
+- Achieved **92.87% accuracy** on sentiment classification
+- Successfully captured long-term dependencies in review text
+- Outperformed traditional machine learning approaches for raw text analysis
+
+---
+
+## Tools and Technologies
+- **Programming Language:** Python
+- **Libraries:** TensorFlow / Keras, Pandas, NumPy, NLTK
+- **Visualization:** Matplotlib, Seaborn
+- **Model:** LSTM-based Recurrent Neural Network
+- **Platform:** Google Colab
+
+---
+
+## Key Learnings
+- Practical application of NLP preprocessing techniques
+- Understanding sequence modeling using LSTM networks
+- Importance of text representation for sentiment analysis
+- Visualizing and interpreting deep learning model performance
+
+---
+
+## Future Improvements
+- Experiment with GRU and BiLSTM architectures
+- Introduce attention mechanisms
+- Explore transformer-based models such as BERT
+- Deploy the system as an API or interactive dashboard
+
+---
+
+## Author
+**Sambit Sahoo**  
+Machine Learning | Deep Learning | NLP
